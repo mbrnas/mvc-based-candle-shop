@@ -29,3 +29,7 @@ export class CandleModel{
         this._scent = scent;
     }
 }
+
+/**
+ * Moe
+ */
