@@ -7,6 +7,6 @@ export class CandleView {
 
     renderCandle(size, color, scent){
         let imgSrc = `media/${size}-${color}-${scent}.jpg`;
-        this.candleDiv.innerHTML = `<img src = '${imgSrc}' alt = 'animal image'>`;
+        this.candleDiv.innerHTML = `<img src = '${imgSrc}' alt = 'Candle Image'>`;
     }
 }
