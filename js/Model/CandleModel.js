@@ -1,3 +1,5 @@
+import { selectData } from "../store/selectData.js";
+
 export class CandleModel{
     static store = selectData;
 
@@ -15,15 +17,16 @@ export class CandleModel{
         let data;
         switch (selectID) {
             case "size":
-              data = AnimalModel.store;
+              data = CandleModel.store;
               break;
       
             case "color":
-              data = CandleModel.store[this.type];
+              data = CandleModel.store;
               break;
 
             case "scent":
-                data = CandleModel.store[this.type];
+                data = CandleModel.store;
+            break;
           }
       
           let options = Object.keys(data);
