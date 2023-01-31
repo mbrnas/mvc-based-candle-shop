@@ -1,32 +1,33 @@
 export class CandleModel{
-    constructor(size, color, scent){
-        this._size = size;
-        this._color = color;
-        this._scent = scent;
+    static store = selectData;
+
+    constructor(){
+        this.size = "undefined";
+        this.color = "undefined";
+        this.scent = "undefined";
     }
 
-    get size(){
-        return this._size;
+    getProperties(){
+        return Object.keys(this);
     }
 
-    get color(){
-        return this._color;
-    }
+    getOptions(selectID){
+        let data;
+        switch (selectID) {
+            case "size":
+              data = AnimalModel.store;
+              break;
+      
+            case "color":
+              data = AnimalModel.store[this.type];
+              break;
 
-    get scent(){
-        return this._scent;
-    }
-
-    set size(size){
-        this._size = size;
-    }
-
-    set color(color){
-        this._color = color;
-    }
-
-    set scent(scent){
-        this._scent = scent;
+            case "scent":
+                data = CandleModel.store[this.type];
+          }
+      
+          let options = Object.keys(data);
+          return options;
     }
 }
 
