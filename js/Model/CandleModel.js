@@ -19,7 +19,7 @@ export class CandleModel{
               break;
       
             case "color":
-              data = AnimalModel.store[this.type];
+              data = CandleModel.store[this.type];
               break;
 
             case "scent":

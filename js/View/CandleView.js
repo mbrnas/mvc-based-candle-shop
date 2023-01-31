@@ -10,7 +10,7 @@ export class CandleView {
         selectIDs.forEach( (id) => {
          let select = document.createElement('select');
          select.setAttribute('id',id);
-         select.options.add(new Option(`--Select a ${name} --`, 'undefined'));
+         select.options.add(new Option(`--Select a ${name} --`, 'undefined', 'undefined'));
          this.selectsDiv.appendChild(select);
         } );
  

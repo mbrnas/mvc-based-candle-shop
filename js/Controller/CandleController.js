@@ -6,9 +6,6 @@ export class CandleController {
 
         let selectIDs = this.model.getProperties();
         this.view.renderSelects(selectIDs);
-
-        
-
         this.view.candleForm.addEventListener('submit', this.handleFormSubmit);
 
 
