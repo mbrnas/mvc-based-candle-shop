@@ -1,10 +1,22 @@
 export const selectData = {
     "large":{
-        "red": 0,
-        "blue": 0
+        "purple": {
+            "mint": 0,
+            "candy": 0
+        },
+        "yellow": {
+            "vanilla": 0,
+            "rose": 0
+        } 
     },
     "small":{
-        "red": 0,
-        "blue": 0
+        "red": {
+            "coconut": 0,
+            "cinnamon": 0
+        },
+        "green": {
+            "apple": 0,
+            "lemon": 0
+        } 
     }
 };

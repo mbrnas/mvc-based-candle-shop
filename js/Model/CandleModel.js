@@ -14,24 +14,32 @@ export class CandleModel{
     }
 
     getOptions(selectID){
-        let data;
+        let options;
         switch (selectID) {
             case "size":
-              data = CandleModel.store;
+              options = Object.keys(CandleModel.store);
               break;
       
             case "color":
-              data = CandleModel.store;
+              options = Object.keys(CandleModel.store[this.size]);
               break;
 
             case "scent":
-                data = CandleModel.store;
+                options = Object.keys(CandleModel.store[this.size][this.color]);
             break;
           }
       
-          let options = Object.keys(data);
+    
           return options;
     }
+
+    resetNextProperties(property) {
+      let properties = Object.keys(this);
+      let index = properties.indexOf(property);
+      while (++index < properties.length) {
+          this[properties[index]] = "undefined";
+      }
+  }
 }
 
 

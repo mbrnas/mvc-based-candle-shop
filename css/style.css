@@ -57,7 +57,7 @@
     /* border: 5px solid green; */
     padding: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: rgba(255, 185, 185, 1);
     max-width: 100%;
@@ -74,6 +74,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto; */
+    background-color: red;
 }
 
 
@@ -179,6 +180,7 @@ li a:hover{
 .buttonsDiv {
     margin-top: 20px;
     margin-left: 10px;
+    background-color: green;
 }
 
 .productSelect {
@@ -209,6 +211,25 @@ li a:hover{
     row-gap: 5em;
 }
 
+.containerform{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container select{
+    width: 20em;
+}
+#div-selects{
+    padding: 20px;
+}
 
 
 @media screen and (max-width: 600px) {
