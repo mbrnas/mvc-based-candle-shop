@@ -42,7 +42,7 @@ export class CandleController {
     handleFormSubmit = (event) => {
         //prevent the default action of a form (prevent submitting it)
         event.preventDefault();
-        //TODO
+        this.model.persist();
     }
 }
 

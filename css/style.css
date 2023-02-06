@@ -45,7 +45,7 @@
 .section4 {
   /* border: 5px solid green; */
   /* height: 450px; */
-  padding: 70px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -56,10 +56,10 @@
   /* border: 5px solid green; */
   padding: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: #0096c7;
-  max-width: 100%;
+  flex-direction: column;
 }
 
 .section5 > div {
@@ -133,7 +133,7 @@ li a:hover {
   /* width: 320px;
     height: 370px;
     size: fixed; */
-  height: 10em;
+  height: 100%;
   width: 200px;
   /* max-width: 100%; */
   padding: 90px;
@@ -141,6 +141,7 @@ li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .selects {
@@ -179,10 +180,8 @@ li a:hover {
 }
 
 #form-candle {
-  display: grid;
-  grid-template-columns: 1fr 200px;
-  column-gap: 15em;
-  row-gap: 5em;
+  display: flex;
+  
 }
 
 .containerform {
@@ -203,7 +202,7 @@ li a:hover {
 }
 #div-selects select {
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 5px solid #0096c7;
 }
 select:hover {
@@ -215,6 +214,8 @@ select:hover {
   transform: translateY(-5px);
   transition: transform 250ms;
 }
+
+
 
 @media screen and (max-width: 600px) {
   .section3 {
@@ -230,12 +231,13 @@ select:hover {
 @media screen and (max-width: 1200px) {
   .section4 {
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
+  }
+  .section5{
+    flex-direction: column;
   }
 }
 
 @media screen and (max-width: 614px) {
-  .section1 {
-    flex-direction: column;
-  }
+ 
 }

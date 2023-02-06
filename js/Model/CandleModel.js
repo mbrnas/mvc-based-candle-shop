@@ -40,6 +40,10 @@ export class CandleModel{
           this[properties[index]] = "undefined";
       }
   }
+
+  persist(){
+    localStorage.setItem('candle', JSON.stringify(this));
+}
 }
 
 
