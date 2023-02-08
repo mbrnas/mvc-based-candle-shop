@@ -1,8 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap'); */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 
 * {
   margin: 0;
@@ -108,21 +106,16 @@ li a:hover {
   text-align: center;
   margin-right: 30px;
   margin-left: 30px;
-  /* height: 200px; */
-  /* background-color: #FFD4D4; */
-  /* color: rgba(255, 185, 185, 1); */
   color: white;
 }
 
 .contentParagraph p {
-  /* background-color: aquamarine; */
   padding: 20px;
   border-radius: 8px;
 }
 
 .purchaseTitle {
   margin-left: 10px;
-  /* grid-column: 1/-1; */
   grid-column: 1/-1;
   text-align: center;
 }
@@ -130,12 +123,8 @@ li a:hover {
 /* *************************** */
 .card {
   background-color: white;
-  /* width: 320px;
-    height: 370px;
-    size: fixed; */
   height: 100%;
   width: 200px;
-  /* max-width: 100%; */
   padding: 90px;
   display: flex;
   flex-direction: column;
@@ -215,7 +204,11 @@ select:hover {
   transition: transform 250ms;
 }
 
-
+.bigContainer{
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
 
 @media screen and (max-width: 600px) {
   .section3 {
@@ -238,6 +231,11 @@ select:hover {
   }
 }
 
-@media screen and (max-width: 614px) {
- 
+@media screen and (max-width: 800px) {
+  .bigContainer{
+    flex-direction: column;
+    justify-content: center;
+  }
 }
+
+
