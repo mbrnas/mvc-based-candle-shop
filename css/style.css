@@ -61,7 +61,7 @@
   /* background-color: rgba(255, 212, 212, 1); */
 }
 
-.section4 {
+#section4 {
   /* border: 5px solid green; */
   /* height: 450px; */
   padding: 20px;
@@ -71,7 +71,7 @@
   align-items: center;
 }
 
-.section5 {
+#section5 {
   /* border: 5px solid green; */
   padding: 50px;
   display: flex;
@@ -81,7 +81,7 @@
   flex-direction: column;
 }
 
-.section5 > div {
+#section5 > div {
   width: 50%;
 }
 
@@ -243,11 +243,11 @@ select:hover {
 }
 
 @media screen and (max-width: 1200px) {
-  .section4 {
+  #section4 {
     flex-direction: column;
     gap: 30px;
   }
-  .section5{
+  #section5{
     flex-direction: column;
   }
 }

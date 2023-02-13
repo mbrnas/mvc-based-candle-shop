@@ -15,13 +15,39 @@
         <form id="form-candle-name">
             <fieldset> 
                 <div class="mydiv">
-                <label for="fname">First name:</label>
+                <!-- <label for="fname">First name:</label>
                 <input type="text" id="fname" name="fname" placeholder="John" size="30"><br>
                 <label for="lname">Last name:</label>
                 <input type="text" id="lname" name="lname" placeholder="Doe" size="30">
                 <label for="email">Email:</label>
-                <input type="text" name="email" id="email" placeholder="example@mail.com" size="30">
+                <input type="text" name="email" id="email" placeholder="example@mail.com" size="30"> -->
+                <div class="form-group">
+                    <label for="fname">First name:</label>
+                    <input type="text" class="form-control" id="fname">
                 </div>
+
+                <div class="form-group">
+                    <label for="lname">Last name:</label>
+                    <input type="text" class="form-control" id="lname">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" class="form-control" id="email">
+                </div>
+            </div>
+                <div class="form-group">
+                    <label for="cardNumber">Credit Card Number:</label>
+                    <input type="text" class="form-control" id="cardNumber" placeholder="XXXX XXXX XXX XXXX">
+                  </div>
+                  <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" class="form-control" id="cvv" placeholder="XYZ">
+                  </div>
+                  <div class="form-group">
+                    <label for="expiryDate">Expiry Date:</label>
+                    <input type="text" class="form-control" id="expiryDate" placeholder="e.g 04/27">
+                  </div>
+                
             </fieldset>
             <input type="submit" value="Submit">
         </form> 
