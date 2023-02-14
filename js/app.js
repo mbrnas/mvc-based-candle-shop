@@ -10,14 +10,23 @@ class App {
     constructor() {
         
         const url = window.location.href;           // e.g. http://localhost:8383/form.html
-        const page = url.match(/[a-z]+.html/)[0];   // match returns an array of matches
+        let page = null; 
+        
+        if(url.match(/[a-z]+.html/)!=null){
+            page = url.match(/[a-z]+.html/)[0];
+        }
+        // match returns an array of matches
 
         switch (page) {
-            case 'index.html':
-                new CandleController(new CandleModel(), new CandleView());
-                break;
+                
             case 'form.html':
                 new FormController(new FormModel(), new FormView());
+                break;
+
+            case 'index.html':
+
+            default:
+                new CandleController(new CandleModel(), new CandleView());
                 break;
         }
     }

@@ -15,15 +15,20 @@ export class FormView {
      * @returns {undefined}
      */
     createInputs(dataObject) {
+        let counter = 0;
         for (let property in dataObject) {
-            this.form.querySelector('fieldset').insertAdjacentHTML('beforeend',
-                    `<p>${property}
-                        <input name='${property}' 
-                               value='${dataObject[property]}' 
-                               type='text' size='30'/>
-                     </p>`);
+            if(counter <= 3){
+                this.form.querySelector('fieldset').insertAdjacentHTML('afterbegin',
+                `<label for = "${property}">${property}:</label>
+                    <input name='${property}' 
+                           value='${dataObject[property]}' 
+                           type='text' id = "${property}" size='30'/>`);
+            }
+            counter++;
         }
         this.inputs = this.form.querySelectorAll('input[type=text]');
     }
 }
+/* <label for="fname">First name:</label>
+<input type="text" id="fname" name="fname" placeholder="John" size="30"> */
 
