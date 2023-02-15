@@ -1,6 +1,9 @@
 * {
   font-family: "Roboto", sans-serif;
+  text-align: center;
 }
+
+
 
 fieldset {
   display: flex;
@@ -8,6 +11,9 @@ fieldset {
   justify-content: center;
   width: fit-content;
   margin: 0 auto;
+  border: 2px solid #0096c7;
+  background-color: white;
+  border-radius: 10px;
 }
 
 /* fieldset input{
@@ -17,7 +23,7 @@ fieldset {
 } */
 
 input[type="submit"] {
-  background-color: #0096c7;
+  background-color:#0096c7;
   color: white;
   padding: 14px 20px;
   margin: 8px auto;
@@ -25,6 +31,7 @@ input[type="submit"] {
   cursor: pointer;
   border: 0;
   display: block;
+
 
 }
 
@@ -51,4 +58,11 @@ input[type="text"] {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   width: fit-content;
+  margin: 10px;
 }
+
+
+
+
+
+

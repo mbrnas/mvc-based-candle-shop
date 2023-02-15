@@ -29,6 +29,4 @@ export class FormView {
         this.inputs = this.form.querySelectorAll('input[type=text]');
     }
 }
-/* <label for="fname">First name:</label>
-<input type="text" id="fname" name="fname" placeholder="John" size="30"> */
 

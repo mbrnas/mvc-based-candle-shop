@@ -1,6 +1,7 @@
 let fname = document.querySelector('#fname');
 let lname = document.querySelector('#lname');
 let email = document.querySelector('#email');
+let credit = document.querySelector('#credit');
 
 fname.addEventListener('change', o => {
     let regName = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/;
@@ -21,7 +22,8 @@ lname.addEventListener('change', o =>{
     
     if(!regName.test(lname.value)){
         lname.style.border = "2px solid red";
-        lname.style.color = "red";
+        lname.style.color = "red"; 
+        lname.innerHTML = "Wrong input, only letters allowed";
     }
     else{
         lname.style.border = "1px solid black";
@@ -40,3 +42,5 @@ email.addEventListener('change', o=> {
         email.style.color = "black";
     }
 });
+
+

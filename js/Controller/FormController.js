@@ -30,10 +30,6 @@ export class FormController {
     handleFormSubmit = (event) => {
         //prevent the default action of a form (prevent submitting it)
         event.preventDefault();
-        this.model.persist();
-//            let formData = new FormData(this.view.form);
-//            for (let entry of formData) {
-//                localStorage.setItem(entry[0], entry[1]);
-//            }            
+        this.model.persist();           
     }
 }
