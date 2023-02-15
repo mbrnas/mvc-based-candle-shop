@@ -21,7 +21,6 @@ lname.addEventListener('change', o =>{
     if(!regName.test(lname.value)){
         lname.style.border = "2px solid red";
         lname.style.color = "red"; 
-        lname.innerHTML = "Wrong input, only letters allowed";
     }
     else{
         lname.style.border = "1px solid black";
