@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
@@ -13,7 +12,7 @@
 }
 
 .hover-underline-animation::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -30,11 +29,11 @@
   transform-origin: bottom left;
 }
 
-.animate__animated.animate__bounceInDown{
+.animate__animated.animate__bounceInDown {
   --animate-duration: 2s;
 }
 
-#overlaycontainer{
+#overlaycontainer {
   display: none;
   position: fixed;
   left: 0;
@@ -49,7 +48,7 @@
   flex-direction: column;
   color: white;
 }
-[class*="no-"] #overlaycontainer{
+[class*="no-"] #overlaycontainer {
   display: block;
   display: flex;
   justify-content: center;
@@ -69,7 +68,7 @@
   flex-direction: row;
   padding: 15px;
 }
-.section1 h3{
+.section1 h3 {
   color: #0096c7;
 }
 
@@ -77,8 +76,17 @@
   /* border: 5px solid green; */
   display: flex;
   justify-content: center;
-  padding: 300px;
-  
+  /* padding: 300px; */
+  height: 100vh;
+  position: relative;
+}
+
+.hero_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: inline-block; */
 }
 
 .section3 {
@@ -91,20 +99,21 @@
   gap: 50px;
 }
 
-.imagedivs{
+.imagedivs {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#section4 {
+.section4 {
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 50px;
+  align-items: center;
 }
 
-#section4 div{
+.section4 div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,7 +182,7 @@ li a:hover {
   padding: 20px;
   border-radius: 8px;
 }
-.contentParagraph h1{
+.contentParagraph h1 {
   text-align: center;
 }
 
@@ -232,7 +241,6 @@ li a:hover {
 
 #form-candle {
   display: flex;
-  
 }
 
 .containerform {
@@ -252,9 +260,9 @@ li a:hover {
   width: 20em;
 }
 #div-selects select {
-  padding: 5px;
+  padding: 5px 0;
   border-radius: 10px;
-  border: 5px solid #0096c7;
+  /* border: 5px solid #0096c7; */
 }
 select:hover {
   transform: translateY(-2px);
@@ -266,12 +274,23 @@ select:hover {
   transition: transform 250ms;
 }
 
-.bigContainer{
+.bigContainer {
   display: flex;
   justify-content: center;
   gap: 10rem;
 }
 
+#div-candle img {
+  max-width: 200px;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 20px;
+}
+.selects-submit-container {
+  padding: 5px;
+}
 @media screen and (max-width: 600px) {
   .section3 {
     flex-direction: column;
@@ -281,29 +300,31 @@ select:hover {
   #form-candle {
     grid-template-columns: 1fr;
   }
+
+  .containerform {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-  #section4 {
+  .section4 {
     flex-direction: column;
     gap: 30px;
   }
-  #section5{
+  #section5 {
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .bigContainer{
+  .bigContainer {
     flex-direction: column;
     justify-content: center;
   }
-  .section3{
+  .section3 {
     grid-template-columns: 1fr;
   }
-  .section4{
+  .section4 {
     grid-template-columns: 1fr;
   }
 }
-
-
