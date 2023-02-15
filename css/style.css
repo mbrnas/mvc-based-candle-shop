@@ -51,19 +51,22 @@
 }
 
 .section3 {
-  /* border: 5px solid green; */
-  /* min-height: 380px; */
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding-top: 2em;
   padding-bottom: 2em;
   background-color: #0096c7;
-  /* background-color: rgba(255, 212, 212, 1); */
+  text-align: justify;
+  gap: 50px;
+}
+
+.imagedivs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #section4 {
-  /* border: 5px solid green; */
-  /* height: 450px; */
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -124,7 +127,7 @@ li a:hover {
 }
 
 .contentParagraph {
-  text-align: center;
+  text-align: justify;
   margin-right: 30px;
   margin-left: 30px;
   color: white;
@@ -133,6 +136,9 @@ li a:hover {
 .contentParagraph p {
   padding: 20px;
   border-radius: 8px;
+}
+.contentParagraph h1{
+  text-align: center;
 }
 
 .purchaseTitle {
@@ -144,9 +150,8 @@ li a:hover {
 /* *************************** */
 .card {
   background-color: white;
-  height: 100%;
   width: 200px;
-  padding: 90px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -256,6 +261,9 @@ select:hover {
   .bigContainer{
     flex-direction: column;
     justify-content: center;
+  }
+  .section3{
+    grid-template-columns: 1fr;
   }
 }
 

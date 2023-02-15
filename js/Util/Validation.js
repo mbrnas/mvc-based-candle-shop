@@ -5,8 +5,6 @@ let credit = document.querySelector('#credit');
 
 fname.addEventListener('change', o => {
     let regName = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/;
-    console.log(fname.value);
-    console.log(!regName.test(fname.value));
     if(!regName.test(fname.value)){
         fname.style.border = "2px solid red";
         fname.style.color = "red";
@@ -42,5 +40,6 @@ email.addEventListener('change', o=> {
         email.style.color = "black";
     }
 });
+
 
 
