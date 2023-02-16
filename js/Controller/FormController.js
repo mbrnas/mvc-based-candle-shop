@@ -8,11 +8,11 @@
 
 export class FormController {
 
-    
     constructor(model, view) {
         this.model = model;
         this.view = view;
         this.view.createInputs(this.model.getInputData());
+
 
         // register one event handler for all input 'change' events
         this.view.inputs.forEach((input) => {
@@ -33,7 +33,7 @@ export class FormController {
     handleFormSubmit = (event) => {
         //prevent the default action of a form (prevent submitting it)
         event.preventDefault();
-        this.model.persist();           
+        this.model.persist();     
     }
 
    

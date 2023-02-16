@@ -10,7 +10,9 @@
 .animate__animated.animate__bounceInDown {
   --animate-duration: 2.5s;
 }
-
+.herospan{
+  color: #0096c7;
+}
 #overlaycontainer {
   display: none;
   position: fixed;

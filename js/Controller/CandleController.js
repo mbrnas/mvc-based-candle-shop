@@ -58,7 +58,7 @@ export class CandleController {
         //"undefined".
         this.model[select.id] = select.value;
         this.model.resetNextProperties(select.id);
-        console.log(this.model);
+        ;
 
         //2.1 Update the selectsDiv - reset next selects & load new options into
         // the next select only if the current selected option is different than 
