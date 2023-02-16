@@ -5,29 +5,7 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-.my-animation {
-  display: inline-block;
-  position: relative;
-  color: black;
-}
 
-.my-animation::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  right: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.my-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom right;
-}
 
 .animate__animated.animate__bounceInDown {
   --animate-duration: 2.5s;
@@ -245,20 +223,7 @@ li a:hover {
 .container select {
   width: 20em;
 }
-#div-selects select {
-  padding: 5px 0;
-  border-radius: 10px;
-  /* border: 5px solid #0096c7; */
-}
-select:hover {
-  transform: translateY(-2px);
-  transition: transform 250ms;
-}
 
-.footerImages:hover {
-  transform: translateY(-5px);
-  transition: transform 250ms;
-}
 
 .bigContainer {
   display: flex;
@@ -270,10 +235,6 @@ select:hover {
   max-width: 200px;
 }
 
-.submit-btn {
-  width: 100%;
-  margin-top: 20px;
-}
 .selects-submit-container {
   padding: 5px;
 }
