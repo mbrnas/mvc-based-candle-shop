@@ -1,7 +1,7 @@
 import { selectData } from "../store/selectData.js";
 /**
  * Represents the application model. The model contains the data, the information
- * regarding the animal such as: type and color. The model can obtain data either
+ * regarding the candle such as: size, color and scent. The model can obtain data either
  * from a database or files, which could be located locally or externally. This
  * class holds a reference to an exernal file that contains data for select options.
  *
@@ -13,7 +13,7 @@ export class CandleModel {
   /**
    * Creates an object representing the animal model.
    *
-   * @returns {AnimalModel} The object representing the animal model.
+   * @returns {CandleModel} The object representing the candle model.
    */
   constructor() {
     this.size = "undefined";
@@ -72,8 +72,8 @@ export class CandleModel {
     }
   }
   /**
-   * Stores animal data accross browser sessions. Window.localStorage is used
-   * to store the model as a JSON string under the key 'animal'.
+   * Stores candle data accross browser sessions. Window.localStorage is used
+   * to store the model as a JSON string under the key 'candle'.
    *
    * @returns {undefined}
    * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage}
@@ -82,9 +82,5 @@ export class CandleModel {
 
   persist() {
     localStorage.setItem("candle", JSON.stringify(this));
-    //Let's test if this is stored. Delete this from your project:
-    //        let animal = localStorage.getItem('animal');
-    //        console.log(animal === null ? 'No animal found in local storage' : JSON.parse(animal));
-    //        console.log(animal === null ? 'No animal found in local storage' : animal);
   }
 }

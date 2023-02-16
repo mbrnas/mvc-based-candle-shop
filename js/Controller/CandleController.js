@@ -24,7 +24,7 @@ export class CandleController {
      * 
      * @param {type} model - The model the controller interacts with.
      * @param {type} view - The view the controller interatcs with.
-     * @returns {CandleController} The object representing the animal controller.
+     * @returns {CandleController} The object representing the candle controller.
      */
     constructor(model, view) {
         this.model = model;
@@ -52,7 +52,7 @@ export class CandleController {
    
     handleSelectChange = (event) => {
         let select = event.target;
-          //1. UPDATE MODEL ------------------------------------------------------
+          //1. UPDATE MODEL 
         //Once the current model property is update, the other model properties
         //that are defined after the current property, they need to be reset to 
         //"undefined".

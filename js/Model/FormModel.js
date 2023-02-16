@@ -32,8 +32,8 @@ export class FormModel {
     }
 
     /**
-     * Stores animal data accross browser sessions. Window.localStorage is used 
-     * to store the model as a JSON string under the key 'animal'.
+     * Stores candle data accross browser sessions. Window.localStorage is used 
+     * to store the model as a JSON string under the key 'candle'.
      * 
      * @returns {undefined}
      * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage}

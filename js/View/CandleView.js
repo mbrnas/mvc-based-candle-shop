@@ -1,6 +1,6 @@
 /**
  * Class that represents the application view. The view displays information
- * contained in the model: type & color. The view does not obtain the information
+ * contained in the model: size&color&scent. The view does not obtain the information
  * directly from the model, it uses the controller as a mediator which instructs
  * it when and what to display.
  *

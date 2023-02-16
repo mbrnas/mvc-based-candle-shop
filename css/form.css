@@ -41,9 +41,6 @@ input[type="submit"]:hover {
 }
 
 
-
-
-
 label {
   font-weight: bold;
 }
@@ -61,8 +58,12 @@ input[type="text"] {
   margin: 10px;
 }
 
-
-
+.disabled-button{
+  opacity: 50%;
+}
+.disabled-button:hover{
+  cursor: not-allowed;
+}
 
 
 
